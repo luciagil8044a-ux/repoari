@@ -1,1 +1,25 @@
+#Ejercicio Herencia
+class Coche:
+    def __init__(self):
+        pass
+class CocheNadador(Coche):
+    def __init__(self):
+        super().__init__()
+        self.nadando = False
+
+    def empezar_a_nadar(self):
+        self.nadando = True
+
+    def dejar_de_nadar(self):
+        self.nadando = False
+
+coche = CocheNadador()
+
+print(coche.nadando)
+
+coche.empezar_a_nadar()
+print(coche.nadando)
+
+coche.dejar_de_nadar()
+print(coche.nadando)
 
